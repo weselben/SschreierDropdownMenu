@@ -25,24 +25,24 @@
             <name>dropdownMenuMinWidth</name>
             <label>min width of the dropdown menu in pixels</label>
             <label lang="de-DE">Mindestbreite des Dropdown Menüs in Pixeln</label>
-            <defaultValue>275</defaultValue>
-            <placeholder>275</placeholder>
+            <defaultValue>300</defaultValue>
+            <placeholder>300</placeholder>
         </input-field>
 
         <input-field type="int">
             <name>dropdownMenuFontSize</name>
             <label>font size of the dropdown menu in pixels</label>
             <label lang="de-DE">Schriftgröße des Dropdown Menüs in Pixeln</label>
-            <defaultValue>14</defaultValue>
-            <placeholder>14</placeholder>
+            <defaultValue>13</defaultValue>
+            <placeholder>13</placeholder>
         </input-field>
 
         <input-field type="text">
             <name>dropdownMenuPadding</name>
             <label>padding of the dropdown menu</label>
             <label lang="de-DE">Innenabstand des Dropdown Menüs</label>
-            <defaultValue>8px 20px 8px 20px</defaultValue>
-            <placeholder>8px 20px 8px 20px</placeholder>
+            <defaultValue>4px 10px 4px 10px</defaultValue>
+            <placeholder>4px 10px 4px 10px</placeholder>
         </input-field>
     </card>
 
