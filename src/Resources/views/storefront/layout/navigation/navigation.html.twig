@@ -17,7 +17,7 @@
         {% elseif activeViewportsDropdownStickyMenuString == "xl" %}
             {% set notActiveViewportsDropdownStickyMenuString = "'XS', 'SM', 'MD', 'LG'" %}
         {% elseif activeViewportsDropdownStickyMenuString == "" %}
-            {% set notActiveViewportsDropdownStickyMenuString = "'XS', 'SM', 'MD', 'LG', 'XL'" %}    
+            {% set notActiveViewportsDropdownStickyMenuString = "'XS', 'SM', 'MD', 'LG', 'XL'" %}
         {% endif %}
 
         {% block layout_main_navigation_dropdownmenu_stickymenu_inner_before %}{% endblock %}
@@ -50,12 +50,12 @@
 
     {% if config('SschreierDropdownMenu.config.showNavigationMenuItemHome') %}
         {% if config('SschreierDropdownMenu.config.replaceNavigationMenuItemHomeWithIcon') %}
-             <a class="nav-link main-navigation-link{% if controllerAction is same as('home') %} active{% endif %} home-link"
-                href="{{ path('frontend.home.page') }}"
-                itemprop="url"
-                title="{{ homeLabel|striptags }}">
+            <a class="nav-link main-navigation-link{% if controllerAction is same as('home') %} active{% endif %} home-link"
+               href="{{ path('frontend.home.page') }}"
+               itemprop="url"
+               title="{{ homeLabel|striptags }}">
                 <div class="main-navigation-link-text">
-                    <span class="icon-home-container">{% sw_icon 'home' %}</span>
+                    <i class="fas fa-home icon-home-container"></i>
                 </div>
             </a>
         {% else %}
@@ -80,12 +80,12 @@
 {% endblock %}
 
  {% block layout_main_navigation_menu_flyout_wrapper %}
-    {% block layout_main_navigation_menu_flyout_wrapper_dropdownmenu_before %}{% endblock %}
+     {% block layout_main_navigation_menu_flyout_wrapper_dropdownmenu_before %}{% endblock %}
 
-    {% if config('SschreierDropdownMenu.config.dropdownMenuIsActive') %}
-    {% else %}
-        {{ parent() }}
-    {% endif %}
+     {% if config('SschreierDropdownMenu.config.dropdownMenuIsActive') %}
+     {% else %}
+         {{ parent() }}
+     {% endif %}
 
-    {% block layout_main_navigation_menu_flyout_wrapper_dropdownmenu_after %}{% endblock %}
+     {% block layout_main_navigation_menu_flyout_wrapper_dropdownmenu_after %}{% endblock %}
  {% endblock %}
