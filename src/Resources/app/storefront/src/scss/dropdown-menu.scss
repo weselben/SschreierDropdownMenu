@@ -188,4 +188,9 @@ $sschreier-dropdownmenu-padding: 2px 10px 2px 10px !default;
       }
     }
   }
+  .dropdown {
+    .dropdown-menu::before {
+      display: none !important;
+    }
+  }
 }
