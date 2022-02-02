@@ -193,4 +193,18 @@ $sschreier-dropdownmenu-padding: 2px 10px 2px 10px !default;
       display: none !important;
     }
   }
+  //Vermutlich nur relevant für unseren Webshopdirekt aufgrund von Customthemes
+  .main-navigation-link-text {
+    height: 25px !important;
+  }
+  #span-name {
+    height: 25px !important;
+    line-height: 25px !important;
+  }
+  .nav-link.main-navigation-link.dropdown {
+    height: 43px !important;
+    .dropright {
+      height: 33px !important;
+    }
+  }
 }
